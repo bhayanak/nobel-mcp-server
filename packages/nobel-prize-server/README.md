@@ -143,37 +143,6 @@ Input: { "metric": "shared" }
 Input: { "metric": "country", "decade": 2020 }
 ```
 
-## 🏗️ Architecture
-
-```
-┌──────────────────┐     MCP (stdio)     ┌────────────────────────┐
-│   AI Client      │ ◄────────────────► │ Nobel Prize MCP Server │
-│ (Claude, Copilot)│                     │  (TypeScript/Node)     │
-└──────────────────┘                     └──────────┬─────────────┘
-                                                    │ HTTP (fetch)
-                                                    ▼
-                                         ┌────────────────────────┐
-                                         │ api.nobelprize.org/2.1 │
-                                         │ (REST, no auth, JSON)  │
-                                         └────────────────────────┘
-```
-
-- **Runtime**: Node.js ≥ 18 with native `fetch`
-- **Transport**: stdio (standard MCP)
-- **Cache**: In-memory LRU with configurable TTL (24h default — Nobel data rarely changes)
-- **Security**: Zod input validation, SSRF protection (URL restricted to `api.nobelprize.org`), no auth needed
-
-## 🧪 Development
-
-```bash
-# From monorepo root
-pnpm install
-pnpm --filter nobel-prize-mcp-server run dev       # Run in dev mode
-pnpm --filter nobel-prize-mcp-server run test       # Run tests
-pnpm --filter nobel-prize-mcp-server run test:coverage  # 99%+ coverage
-pnpm --filter nobel-prize-mcp-server run build      # Build for production
-```
-
 ## 📄 License
 
 [MIT](../../LICENSE) © bhayanak

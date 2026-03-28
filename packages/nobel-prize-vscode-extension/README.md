@@ -75,40 +75,6 @@ Try asking your AI assistant:
 - *"Which countries have the most Nobel Prizes in Literature?"*
 - *"What are the trends in shared vs sole Nobel Prizes?"*
 
-## 🏗️ How It Works
-
-The extension bundles the Nobel Prize MCP Server and registers it as a native VS Code MCP server using `McpStdioServerDefinition`. VS Code manages the server process lifecycle:
-
-```
-VS Code ──► Extension activates on startup
-         ──► Registers McpServerDefinitionProvider
-         ──► VS Code spawns server process (dist/server.js)
-         ──► MCP tools become available to AI assistants
-```
-
-- Uses VS Code's own Node.js (`process.execPath`) to run the server
-- Configuration is read from VS Code Settings and passed as environment variables
-- Server communicates via stdio (standard MCP protocol)
-
-## 🧪 Development
-
-```bash
-# From monorepo root
-pnpm install
-pnpm --filter nobel-prize-vscode-extension run build    # Build extension + server
-pnpm --filter nobel-prize-vscode-extension run package   # Create VSIX
-pnpm --filter nobel-prize-vscode-extension run dev       # Watch mode
-```
-
-### Building the VSIX
-
-```bash
-pnpm run package
-# Creates: nobel-prize-mcp-extension-<version>.vsix
-```
-
-The VSIX includes both `dist/extension.js` (activation logic) and `dist/server.js` (self-contained MCP server).
-
 ## 📄 License
 
 [MIT](../../LICENSE) © bhayanak
