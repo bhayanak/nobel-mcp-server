@@ -1,0 +1,25 @@
+{
+  "name": "nobel-prize-mcp",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm --filter nobel-prize-mcp-server run dev",
+    "test": "pnpm -r run test",
+    "test:coverage": "pnpm --filter nobel-prize-mcp-server run test:coverage",
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
+    "typecheck": "pnpm -r run typecheck",
+    "format": "pnpm -r run format",
+    "format:fix": "pnpm -r run format:fix",
+    "package": "pnpm -r run package",
+    "ci": "pnpm run typecheck && pnpm run lint && pnpm run test:coverage && pnpm run format && pnpm run build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhayanak/nobel-prize-mcp-server"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

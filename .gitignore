@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.vsix
+.env
+coverage/
+.turbo/
+.vscode/
+*.md
+!README.md

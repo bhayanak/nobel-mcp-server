@@ -1,0 +1,69 @@
+{
+  "nobelPrizes": [
+    {
+      "awardYear": "2023",
+      "category": { "en": "Physics" },
+      "categoryFullName": { "en": "The Nobel Prize in Physics" },
+      "dateAwarded": "2023-10-03",
+      "prizeAmount": 11000000,
+      "prizeAmountAdjusted": 11000000,
+      "laureates": [
+        {
+          "id": "1029",
+          "knownName": { "en": "Pierre Agostini" },
+          "fullName": { "en": "Pierre Agostini" },
+          "portion": "1/3",
+          "sortOrder": "1",
+          "motivation": { "en": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter" },
+          "affiliations": [
+            { "name": { "en": "The Ohio State University" }, "city": { "en": "Columbus, OH" }, "country": { "en": "USA" } }
+          ]
+        },
+        {
+          "id": "1030",
+          "knownName": { "en": "Ferenc Krausz" },
+          "fullName": { "en": "Ferenc Krausz" },
+          "portion": "1/3",
+          "sortOrder": "2",
+          "motivation": { "en": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter" },
+          "affiliations": [
+            { "name": { "en": "Max Planck Institute of Quantum Optics" }, "city": { "en": "Garching" }, "country": { "en": "Germany" } }
+          ]
+        },
+        {
+          "id": "1031",
+          "knownName": { "en": "Anne L'Huillier" },
+          "fullName": { "en": "Anne L'Huillier" },
+          "portion": "1/3",
+          "sortOrder": "3",
+          "motivation": { "en": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter" },
+          "affiliations": [
+            { "name": { "en": "Lund University" }, "city": { "en": "Lund" }, "country": { "en": "Sweden" } }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear": "2023",
+      "category": { "en": "Chemistry" },
+      "categoryFullName": { "en": "The Nobel Prize in Chemistry" },
+      "dateAwarded": "2023-10-04",
+      "prizeAmount": 11000000,
+      "prizeAmountAdjusted": 11000000,
+      "laureates": [
+        {
+          "id": "1032",
+          "knownName": { "en": "Moungi Bawendi" },
+          "fullName": { "en": "Moungi G. Bawendi" },
+          "portion": "1/3",
+          "sortOrder": "1",
+          "motivation": { "en": "for the discovery and synthesis of quantum dots" },
+          "affiliations": [
+            { "name": { "en": "Massachusetts Institute of Technology (MIT)" }, "city": { "en": "Cambridge, MA" }, "country": { "en": "USA" } }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": { "offset": 0, "limit": 25, "count": 2 }
+}

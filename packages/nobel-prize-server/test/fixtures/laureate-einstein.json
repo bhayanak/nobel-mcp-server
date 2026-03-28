@@ -1,0 +1,52 @@
+{
+  "laureates": [
+    {
+      "id": "26",
+      "knownName": { "en": "Albert Einstein" },
+      "givenName": { "en": "Albert" },
+      "familyName": { "en": "Einstein" },
+      "fullName": { "en": "Albert Einstein" },
+      "gender": "male",
+      "birth": {
+        "date": "1879-03-14",
+        "place": {
+          "city": { "en": "Ulm" },
+          "country": { "en": "Germany" },
+          "continent": { "en": "Europe" }
+        }
+      },
+      "death": {
+        "date": "1955-04-18",
+        "place": {
+          "city": { "en": "Princeton, NJ" },
+          "country": { "en": "USA" },
+          "continent": { "en": "North America" }
+        }
+      },
+      "nobelPrizes": [
+        {
+          "awardYear": "1921",
+          "category": { "en": "Physics" },
+          "categoryFullName": { "en": "The Nobel Prize in Physics" },
+          "sortOrder": "1",
+          "portion": "1",
+          "dateAwarded": "1922-11-09",
+          "prizeStatus": "received",
+          "motivation": { "en": "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect" },
+          "prizeAmount": 121573,
+          "prizeAmountAdjusted": 4020000,
+          "affiliations": [
+            {
+              "name": { "en": "Kaiser-Wilhelm-Institut für Physik" },
+              "city": { "en": "Berlin" },
+              "country": { "en": "Germany" }
+            }
+          ]
+        }
+      ],
+      "wikipedia": { "english": "https://en.wikipedia.org/wiki/Albert_Einstein" },
+      "wikidata": { "id": "Q937" }
+    }
+  ],
+  "meta": { "offset": 0, "limit": 25, "count": 1 }
+}

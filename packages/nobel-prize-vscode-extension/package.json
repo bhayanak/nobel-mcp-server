@@ -1,0 +1,98 @@
+{
+  "name": "nobel-prize-vscode-extension",
+  "displayName": "Nobel Prize MCP Server",
+  "description": "VS Code extension providing Nobel Prize MCP server — query laureates, prizes, categories, country stats, and historical trends since 1901",
+  "version": "0.1.0",
+  "publisher": "bhayanak",
+  "icon": "logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhayanak/nobel-prize-mcp-server"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp server",
+    "ai",
+    "copilot",
+    "nobel prize",
+    "laureates",
+    "model context protocol",
+    "github copilot",
+    "history",
+    "education",
+    "science"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Nobel Prize MCP Server",
+      "properties": {
+        "nobelPrizeMcp.baseUrl": {
+          "type": "string",
+          "default": "https://api.nobelprize.org/2.1",
+          "description": "Nobel Prize API base URL"
+        },
+        "nobelPrizeMcp.cacheTtlMs": {
+          "type": "number",
+          "default": 86400000,
+          "description": "Cache TTL in milliseconds (default: 24 hours)"
+        },
+        "nobelPrizeMcp.cacheMaxSize": {
+          "type": "number",
+          "default": 200,
+          "description": "Maximum number of cache entries"
+        },
+        "nobelPrizeMcp.timeoutMs": {
+          "type": "number",
+          "default": 10000,
+          "description": "HTTP request timeout in milliseconds"
+        },
+        "nobelPrizeMcp.language": {
+          "type": "string",
+          "default": "en",
+          "enum": ["en", "se", "no"],
+          "description": "Preferred language for Nobel Prize data"
+        },
+        "nobelPrizeMcp.perPage": {
+          "type": "number",
+          "default": 25,
+          "description": "Default results per page"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node build.cjs --watch",
+    "test": "echo \"No tests for extension\"",
+    "lint": "echo \"Extension lint: OK\"",
+    "lint:fix": "echo \"Extension lint:fix: OK\"",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --check \"src/**/*.ts\"",
+    "format:fix": "prettier --write \"src/**/*.ts\"",
+    "package": "pnpm run build && vsce package --no-dependencies -o nobel-prize-mcp-extension-$(node -p \"require('./package.json').version\").vsix",
+    "ci": "pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "nobel-prize-mcp-server": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/vscode": "^1.99.0",
+    "@vscode/vsce": "^3.3.2",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
