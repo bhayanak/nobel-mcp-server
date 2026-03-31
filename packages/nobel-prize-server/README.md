@@ -1,4 +1,8 @@
-# Nobel Prize MCP Server
+<p align="center">
+  <img src="../nobel-prize-vscode-extension/logo.png" alt="Nobel Prize MCP Server" width="128" />
+</p>
+
+<h1 align="center">Nobel Prize MCP Server</h1>
 
 [![npm](https://img.shields.io/npm/v/nobel-prize-mcp-server.svg)](https://www.npmjs.com/package/nobel-prize-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](../../LICENSE)

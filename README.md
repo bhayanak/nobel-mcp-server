@@ -1,4 +1,8 @@
-# Nobel Prize MCP Server
+<p align="center">
+  <img src="packages/nobel-prize-vscode-extension/logo.png" alt="Nobel Prize MCP Server" width="128" />
+</p>
+
+<h1 align="center">Nobel Prize MCP Server</h1>
 
 [![CI](https://github.com/bhayanak/nobel-prize-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/bhayanak/nobel-prize-mcp-server/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](LICENSE)
