@@ -35,6 +35,12 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "nobel-prize-mcp",
+        "label": "Nobel Prize MCP Server"
+      }
+    ],
     "configuration": {
       "title": "Nobel Prize MCP Server",
       "properties": {
