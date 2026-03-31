@@ -8,3 +8,5 @@ coverage/
 *.md
 !README.md
 *.tgz
+.DS_Store
+.idea/
